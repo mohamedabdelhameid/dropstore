@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "favourites",
+  "info": {
+    "singularName": "favourite",
+    "pluralName": "favourites",
+    "displayName": "favourite"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "favourite_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::favourite-item.favourite-item",
+      "mappedBy": "favourite"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "favourite"
+    }
+  }
+}

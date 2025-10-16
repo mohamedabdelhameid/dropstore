@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_colors_quantities",
+  "info": {
+    "displayName": "ColorsQuantity"
+  },
+  "options": {},
+  "attributes": {
+    "colorName": {
+      "type": "string"
+    },
+    "colorHex": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "integer"
+    }
+  },
+  "config": {}
+}
