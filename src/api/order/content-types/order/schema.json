@@ -11,41 +11,38 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "order_items": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::order-item.order-item",
-      "mappedBy": "order"
+    "client_name": {
+      "type": "string"
+    },
+    "phone_number": {
+      "type": "string"
+    },
+    "full_address": {
+      "type": "string"
     },
     "total_price": {
       "type": "float"
     },
-    "orderStatus": {
+    "order_status": {
       "type": "enumeration",
       "enum": [
         "pending",
-        "completed",
-        "cancelled"
+        "cancelled",
+        "accepted"
       ]
     },
-    "payment_methods": {
+    "order_items": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::order-item.order-item",
+      "mappedBy": "orders"
+    },
+    "payment_method": {
       "type": "enumeration",
       "enum": [
-        "cash_on_delivery",
-        "e-wallet"
+        "Cash_On_delivery",
+        "E-wallet"
       ]
-    },
-    "address": {
-      "type": "text"
-    },
-    "notes": {
-      "type": "text"
-    },
-    "users_permissions_user": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "orders"
     }
   }
 }

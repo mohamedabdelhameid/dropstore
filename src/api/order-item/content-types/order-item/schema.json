@@ -11,29 +11,35 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "order": {
+    "orders": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::order.order",
       "inversedBy": "order_items"
     },
-    "quantity": {
-      "type": "integer"
+    "product_name": {
+      "type": "string"
+    },
+    "product_color": {
+      "type": "string"
+    },
+    "product_size": {
+      "type": "string"
     },
     "price": {
       "type": "float"
     },
-    "product": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::product.product",
-      "inversedBy": "order_item"
+    "discount": {
+      "type": "integer"
     },
-    "size": {
-      "type": "string"
+    "final_price": {
+      "type": "float"
     },
-    "color": {
-      "type": "string"
+    "quantity": {
+      "type": "integer"
+    },
+    "total_price": {
+      "type": "float"
     }
   }
 }
