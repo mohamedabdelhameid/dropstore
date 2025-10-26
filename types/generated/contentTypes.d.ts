@@ -730,6 +730,7 @@ export interface ApiOrderOrder extends Struct.CollectionTypeSchema {
     phone_number: Schema.Attribute.String;
     proofImage_Link: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    second_number: Schema.Attribute.String;
     total_price: Schema.Attribute.Float;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

@@ -17,6 +17,9 @@
     "phone_number": {
       "type": "string"
     },
+    "second_number": {
+      "type": "string"
+    },
     "full_address": {
       "type": "string"
     },
