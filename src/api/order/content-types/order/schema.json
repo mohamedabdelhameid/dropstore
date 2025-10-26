@@ -41,7 +41,18 @@
       "type": "enumeration",
       "enum": [
         "Cash_On_delivery",
-        "E-wallet"
+        "E-wallet",
+        "instapay"
+      ]
+    },
+    "proof_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
       ]
     }
   }

@@ -725,9 +725,12 @@ export interface ApiOrderOrder extends Struct.CollectionTypeSchema {
       ['pending', 'cancelled', 'accepted']
     >;
     payment_method: Schema.Attribute.Enumeration<
-      ['Cash_On_delivery', 'E-wallet']
+      ['Cash_On_delivery', 'E-wallet', 'instapay']
     >;
     phone_number: Schema.Attribute.String;
+    proof_image: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
     publishedAt: Schema.Attribute.DateTime;
     total_price: Schema.Attribute.Float;
     updatedAt: Schema.Attribute.DateTime;
