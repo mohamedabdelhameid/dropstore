@@ -728,9 +728,7 @@ export interface ApiOrderOrder extends Struct.CollectionTypeSchema {
       ['Cash_On_delivery', 'E-wallet', 'instapay']
     >;
     phone_number: Schema.Attribute.String;
-    proof_image: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios'
-    >;
+    proofImage_Link: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     total_price: Schema.Attribute.Float;
     updatedAt: Schema.Attribute.DateTime;
